@@ -174,9 +174,6 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set_bool,QTI_GPT_UTILS,USE_BSG_FRAMEWORK,false)
 
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
-
 # Common init scripts
 PRODUCT_PACKAGES += \
     init_thermal.sh \
@@ -252,9 +249,7 @@ PRODUCT_COPY_FILES += \
 #  IPACM
 PRODUCT_PACKAGES += \
     ipacm \
-    IPACM_cfg.xml \
-    libipanat \
-    liboffloadhal
+    IPACM_cfg.xml
 
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
@@ -298,7 +293,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
     com.android.nfc_extras \
-    SecureElement \
     Tag
 
 # Partitions
