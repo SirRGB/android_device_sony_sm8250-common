@@ -209,6 +209,9 @@ debug.stagefright.c2inputsurface=-1
 # NFC
 ro.camera.notify_nfc=1
 
+# OEM Unlock
+ro.oem_unlock_supported=1
+
 # PASR
 vendor.power.pasr.enabled=true
 vendor.pasr.activemode.enabled=true
